@@ -1,0 +1,16 @@
+.fa-menu:before {
+  content: url('../assets/icons/menu.svg');
+}
+
+.fa-close:before {
+  content: url('../assets/icons/close.svg');
+}
+
+.fa {
+  display: inline-block;
+  // font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
