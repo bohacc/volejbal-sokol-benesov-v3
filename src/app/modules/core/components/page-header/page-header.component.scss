@@ -3,7 +3,7 @@
   overflow: hidden;
   // background-color: #111103;
   position: relative;
-  box-shadow: 0 1px #CDB31F;
+  // box-shadow: 0 1px gray;
   color: white;
   // padding: 14px 16px;
   text-decoration: none;
@@ -18,7 +18,7 @@
 /* Style navigation menu links */
 .topnav a, .topnav .logo {
   color: white;
-  padding: 14px 16px;
+  padding: 19px 22px;
   text-decoration: none;
   font-size: 17px;
   display: block;
@@ -27,7 +27,7 @@
 /* Style the hamburger menu */
 .topnav a.icon {
   // background: black;
-  display: block;
+  display: none;
   position: absolute;
   right: 0;
   top: 0;
@@ -51,5 +51,41 @@
 }
 
 .content {
-  padding: 20px;
+  padding: 16px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-icon {
+  height: 20px;
+}
+
+.small-menu {
+  display: none;
+}
+
+.big-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.big-menu div {
+  padding: 0 5px;
+}
+
+.col-title {
+  flex-grow: 1;
+}
+
+@media only screen and (max-width: 576px) {
+  .small-menu {
+    display: block;
+  }
+  .topnav a.icon {
+    display: block;
+  }
+  .big-menu {
+    display: none;
+  }
 }

@@ -1,12 +1,23 @@
 <!-- Top Navigation Menu -->
 <div class="topnav">
-  <div class="page-container">
+  <div class="container">
     <div class="content">
-      <span>Sokol Benešov</span>
-      <img src="./assets/img/logo.png" alt="logo" style="position: absolute; top: 0;">
+      <div class="col-title">
+        <img src="./assets/img/logo.png" alt="logo" class="menu-logo">
+        <span class="menu-title">TJ Sokol Benešov u Prahy</span>
+      </div>
+      <div class="big-menu">
+        <div>Články</div>
+        <div>|</div>
+        <div>Tým</div>
+        <div>|</div>
+        <div>Zápasy</div>
+        <div>|</div>
+        <div>Kontakt</div>
+      </div>
     </div>
     <!-- Navigation links (hidden by default) -->
-    <div id="myLinks" *ngIf="showMenu">
+    <div id="myLinks" *ngIf="showMenu" class="small-menu">
       <a href="#news">News</a>
       <a href="#contact">Contact</a>
       <a href="#about">About</a>
@@ -14,6 +25,6 @@
   </div>
   <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
   <a href="javascript:void(0);" class="icon" (click)="toggleMenu()">
-    <img src="./assets/icons/menu.svg" alt="menu">
+    <img src="./assets/icons/menu.svg" alt="menu" class="menu-icon">
   </a>
 </div>

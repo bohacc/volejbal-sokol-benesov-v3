@@ -5,3 +5,26 @@ body {
   margin: 0;
   font-size: 16px;
 }
+
+.menu-title {
+  color: #FFDF1B;
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.menu-logo {
+  height: 35px;
+}
+
+.news {
+  display: flex;
+  flex-direction: row;
+  text-align: initial;
+  padding-top: 60px;
+  color: black;
+}
+
+.news h5 {
+  color: darkgray;
+}
+

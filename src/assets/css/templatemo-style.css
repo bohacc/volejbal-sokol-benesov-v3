@@ -78,7 +78,7 @@ h2 {
 .sk-spinner-three-bounce div {
   width: 18px;
   height: 18px;
-  background-color: #7AD03A;
+  background-color: #FFDF1B;
   border-radius: 100%;
   display: inline-block;
   -webkit-animation: sk-threeBounceDelay 1.4s infinite ease-in-out;
@@ -129,17 +129,18 @@ h2 {
 /* start countdown */
 #countdown {
   /*background: linear-gradient(90deg, #FF512F 10%, #DD2476 90%);*/
-  background: linear-gradient(90deg, rgba(9,53,121,0.8438725832129726) 0%, rgba(0,138,255,1) 100%);
+  background: linear-gradient(90deg, rgba(0,138,255,1) 0%, rgba(9,53,121,0.8438725832129726) 100%);
   color: #ffffff;
   text-align: center;
   min-height: 800px;
-  padding: 140px 0 100px 0;
+  padding: 80px 0 100px 0;
 }
 
 #countdown h1 {
-  font-size: 80px;
+  /*font-size: 80px;*/
+  font-size: 75px;
   font-weight: 700;
-  color: yellow;
+  color: #FFDF1B;
 }
 
 #countdown h2 {
