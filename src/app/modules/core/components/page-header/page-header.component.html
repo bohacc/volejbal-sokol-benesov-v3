@@ -7,20 +7,21 @@
         <span class="menu-title">TJ Sokol Benešov u Prahy</span>
       </div>
       <div class="big-menu">
-        <div>Články</div>
+        <div><a href="#articles">Články</a></div>
         <div>|</div>
-        <div>Tým</div>
+        <div><a href="#team">Tým</a></div>
         <div>|</div>
-        <div>Zápasy</div>
+        <div><a href="#events">Zápasy</a></div>
         <div>|</div>
-        <div>Kontakt</div>
+        <div><a href="#contact">Kontakt</a></div>
       </div>
     </div>
     <!-- Navigation links (hidden by default) -->
     <div id="myLinks" *ngIf="showMenu" class="small-menu">
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
+      <a href="#articles" (click)="toggleMenu()">Články</a>
+      <a href="#team" (click)="toggleMenu()">Tým</a>
+      <a href="#events" (click)="toggleMenu()">Zápasy</a>
+      <a href="#contact" (click)="toggleMenu()">Kontakt</a>
     </div>
   </div>
   <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->

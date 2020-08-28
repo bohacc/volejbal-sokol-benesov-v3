@@ -17,8 +17,6 @@ body {
 }
 
 .news {
-  display: flex;
-  flex-direction: row;
   text-align: initial;
   padding-top: 60px;
   color: black;
@@ -28,3 +26,42 @@ body {
   color: darkgray;
 }
 
+.media-object img {
+  width: 60px;
+}
+
+.cms .media {
+  padding: 40px 0 20px 20px;
+}
+
+.topnav .big-menu a {
+  padding: 0 !important;
+}
+
+.fa-cup {
+  background-image: url("assets/img/cup.svg");
+}
+
+.fa-net {
+  background-image: url("assets/img/net.svg");
+}
+
+.fa-location {
+  background-image: url("assets/img/location.svg");
+}
+
+.fa-ball {
+  background-image: url("assets/img/ball.svg");
+}
+
+.fa-icon {
+  background-size: 45px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .cms .media {
+    padding-top: 5px;
+  }
+}

@@ -38,7 +38,7 @@ h2 {
 
 /* start title */
 .title h2 {
-  color: #7AD03A;
+  color: rgba(0,138,255,1);
   font-size: 40px;
   font-weight: bold;
   letter-spacing: 4px;
@@ -212,9 +212,9 @@ ul.countdown li h3 {
 }
 
 .features .fa {
-  border: 1px solid #7AD03A;
+  border: 1px solid #FFDF1B;
   border-radius: 50%;
-  color: #7AD03A;
+  color: #FFDF1B;
   font-size: 26px;
   width: 60px;
   height: 60px;
@@ -255,7 +255,7 @@ ul.countdown li h3 {
 }
 
 .team .media h5 {
-  color: #7AD03A;
+  color: #FFDF1B;
   font-weight: bold;
   padding-bottom: 8px;
 }

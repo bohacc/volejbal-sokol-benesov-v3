@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-cms-message',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cms-message.component.scss']
 })
 export class CmsMessageComponent implements OnInit {
+  @Input() date: Date;
+  @Input() title: string;
+  @Input() image: string;
+  @Input() imgCyrcle: boolean;
 
   constructor() { }
 

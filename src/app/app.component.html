@@ -10,7 +10,7 @@
 </div>
 <!-- end preloader -->
 
-<!---start-countdown-timer-->
+<!---main-->
 <section id="countdown">
   <div class="container">
     <div class="row">
@@ -18,7 +18,7 @@
         <h1 class="wow bounceIn" data-wow-delay="0.9s">Volejbal Benešov</h1>
         <h2 class="element">
           <span
-            class="sub-element">Vítejte na stránkách volejbalového klubu <strong>TJ Sokol Benešov u Prahy</strong></span>
+            class="sub-element">Vítejte na stránkách volejbalového klubu <strong>TJ&nbsp;Sokol Benešov u Prahy</strong></span>
         </h2>
 
         <!-- Edit js/init.js file for the date and time -->
@@ -41,26 +41,36 @@
             <h3>Seconds</h3>
           </li>
         </ul>
-        <!-- subscribe form -->
-        <!--<form action="#" method="post">
-          <div class="col-md-3 col-sm-3"></div>
-          <div class="col-md-4 col-sm-4">
-            <input type="email" class="form-control" placeholder="Your Email">
-          </div>
-          <div class="col-md-2 col-sm-2">
-            <input type="submit" class="form-control" value="SUBSCRIBE">
-          </div>
-        </form>-->
-        <!-- subscribe form -->
-        <div class="news">
-          <app-cms-message style="display: contents"></app-cms-message>
-          <app-cms-message style="display: contents"></app-cms-message>
-        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row news">
+      <div class="col-md-6 col-sm-6 pb-3">
+        <app-cms-message style="display: contents"
+                         [date]="'28.8.2020'"
+                         [title]="'Jdeme do sezóny v nových dresech'"
+                         [image]="'assets/img/dress2.svg'"
+        >
+          Letos budeme začínat soutěž v nových dresech. Věříme že nám sednou stejně dobře jako zápasy v druhé lize a
+          přinesou nám štěstí.
+        </app-cms-message>
+      </div>
+      <div class="col-md-6 col-sm-6">
+        <app-cms-message style="display: contents" class="col-md-6 col-sm-6"
+                         [date]="'16.2.2020'"
+                         [title]="'Smutná zpráva'"
+                         [image]="'assets/img/cross.svg'"
+        >
+          Smutná zpráva benešovského volejbalu. Se zármutkem v našich volejbalových srdcích Vám oznamujeme, že z
+          našich řad odešli Jiří Kosík a Viktor Jiráček senior. <a href="#articles1">Celá zpráva...</a>
+        </app-cms-message>
       </div>
     </div>
   </div>
 </section>
-<!---End-countdown-timer-->
+<!---end main-->
 
 <!-- start features -->
 <section class="features text-center">
@@ -68,27 +78,27 @@
     <div class="row">
       <div class="col-md-12">
         <div class="title wow bounceIn">
-          <h2>Features</h2>
+          <h2>Přehled</h2>
         </div>
         <div class="col-md-3 col-sm-6 wow fadeInUp templatemo-feature" data-wow-delay="0.6s">
-          <i class="fa fa-mobile"></i>
-          <h4 class="text-uppercase">Fully Responsive</h4>
-          <p>Lorem ipsum dolor sit consectetur ang elit doloribus magni incidunt fugit assumenda atque.</p>
+          <i class="fa fa-icon fa-cup"></i>
+          <h4 class="text-uppercase">Soutěž</h4>
+          <p>V sezóně 2020/2021 hrajeme 2.ligu (2-M-B).</p>
         </div>
         <div class="col-md-3 col-sm-6 wow fadeInUp templatemo-feature" data-wow-delay="0.6s">
-          <i class="fa fa-cogs"></i>
-          <h4 class="text-uppercase">Bootstrap 3.3.4</h4>
-          <p>Lorem ipsum dolor sit consectetur ang elit doloribus magni incidunt fugit assumenda atque.</p>
+          <i class="fa fa-icon fa-location"></i>
+          <h4 class="text-uppercase">Kde hrajeme</h4>
+          <p>Sportovní hala ZŠ Jiráskova, Jiráskova 888, Benešov, (pondělí Sokolovna, Tyršova 438).</p>
         </div>
         <div class="col-md-3 col-sm-6 wow fadeInUp templatemo-feature" data-wow-delay="0.6s">
-          <i class="fa fa-font"></i>
-          <h4 class="text-uppercase">Google Fonts</h4>
-          <p>Lorem ipsum dolor sit consectetur ang elit doloribus magni incidunt fugit assumenda atque.</p>
+          <i class="fa fa-icon fa-net"></i>
+          <h4 class="text-uppercase">Tréninky</h4>
+          <p>Každé pondělí od 19:30-21:30 a středu od 20:00-22:00.</p>
         </div>
         <div class="col-md-3 col-sm-6 wow fadeInUp templatemo-feature" data-wow-delay="0.6s">
-          <i class="fa fa-html5"></i>
-          <h4 class="text-uppercase">HTML5 CSS3</h4>
-          <p>Feel free to use this template for your website. Tell your friends about templatemo.</p>
+          <i class="fa fa-icon fa-ball"></i>
+          <h4 class="text-uppercase">Přidej se k nám</h4>
+          <p>Pokuď už jsi to někdy hrál a máš chuť, přidej se k nám. Přijď se podívat na trénink.</p>
         </div>
       </div>
     </div>
@@ -98,11 +108,11 @@
 
 <!-- start team -->
 <section class="team">
-  <div class="container">
+  <div class="container" id="team">
     <div class="row">
       <div class="col-md-12 text-center">
         <div class="title wow bounceIn">
-          <h2>We Are Growing</h2>
+          <h2>Náš tým</h2>
         </div>
       </div>
       <div class="col-md-6 col-sm-6 border_right border_bottom wow fadeIn" data-wow-delay="0.6s">
@@ -162,16 +172,79 @@
 </section>
 <!-- end team -->
 
+<!-- cms -->
+<section class="team">
+  <div class="container" id="articles">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="title wow bounceIn">
+          <h2>Články</h2>
+        </div>
+      </div>
+      <div class="col-md-12 col-sm-12 border_bottom wow fadeIn" data-wow-delay="0.6s" id="articles1">
+        <div class="media">
+          <div class="pull-left media-object">
+            <img src="assets/img/cross.svg" class="img-circle img-responsive" alt="team img">
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading text-uppercase">
+              Vážení přátelé benešovského volejbalu. Se zármutkem v našich volejbalových srdcích Vám oznamujeme, že z
+              našich řad odešli Jiří Kosík a Viktor Jiráček senior.</h4>
+            <h5>16.2.2020</h5>
+            <p>
+              <strong>Jiří Kosík</strong> (12.2.2020 - nedožitých 73 let). Byl dlouholetým členem volejbalového oddílu
+              TJ Lokomotiva
+              Benešov (později
+              TJ ČSAD Benešov) od roku 1960 do roku 1980 jako aktivní hráč. Později do roku 1990 jako řadový člen
+              oddílu. V civilním
+              životě začínal po vyučení dřevomodelářem v Blanických strojírnách Vlašim jako zaměstnanec v truhlárně
+              Železničního
+              stavitelství Benešov, později jako mistr v truhlářské dílně, hlavní mistr v učilišti ŽS Benešov a po
+              vzniku Středního
+              odborného učiliště stavebního Benešov byl později jmenován do funkce ředitele, ve které pracoval až do
+              roku 2012 kdy
+              odešel do důchodu.
+              <br>
+              <strong>Viktor Jiráček senior</strong> (15.2.2020 - nedožitých 88 let). Byl dlouholetým členem
+              volejbalového oddílu TJ
+              Slavoj Benešov
+              (později TJ Lokomotiva Benešov, TJ ČSAD Benešov a TJ Sokol Benešov) od roku 1953 do roku 1989 jako aktivní
+              hráč a
+              kapitán mužstva mužů. Později do roku 2018 postupně jako trenér družstva mužů a žen a také jako trenér
+              mládeže.
+              Současně byl také vedoucím mužstva mužů a žen. Ve výkonném výboru TJ Sokol Benešov vykonával funkci
+              hospodáře. V
+              civilním životě začínal v zahradnictví svých rodičů na pozemcích dnešní ZŠ v Dukelské ulici, které později
+              sám
+              provozoval až do roku cca 1970, kdy byla zahájena výstavby základní školy. Přijal nabídku pracovat jako
+              vedoucí v
+              zahradnictví Komunálních služeb Benešov, které se nacházelo v lokalitě Zimního stadionu Benešov a kde
+              pracoval až do
+              odchodu do důchodu. Ani potom práce na zahradě neopustil a věnoval se soukromé zahrádce Na Sladovce a
+              především
+              činnosti ve volejbalovém oddílu. Poslední dva roky začali Viktora limitovat potíže s pohybovým ústrojím,
+              které
+              ukončili jeho bohatou, pestrou a oblíbenou činnost na poli sportovním a práce na zahradě. Na oba budeme
+              vzpomínat -
+              oddíl volejbalu TJ Sokol Benešov.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- start contact -->
 <section class="contact">
-  <div class="container">
+  <div class="container" id="contact">
     <div class="row">
       <div class="col-md-12">
         <div class="title wow bounceIn">
-          <h2>Stay Connected</h2>
+          <h2>Kontakt</h2>
         </div>
       </div>
-      <div class="col-md-6 col-sm-6 wow fadeInLeft" data-wow-delay="0.6s">
+      <!--<div class="col-md-6 col-sm-6 wow fadeInLeft" data-wow-delay="0.6s">
         <div class="contact-form">
           <form action="#" method="post">
             <input type="text" class="form-control" placeholder="Name">
@@ -181,12 +254,14 @@
             <input type="submit" class="form-control" value="SEND MESSAGE">
           </form>
         </div>
-      </div>
+      </div>-->
       <div class="col-md-6 col-sm-6 wow fadeInRight" data-wow-delay="0.6s">
         <address>
-          <p><i class="fa fa-envelope-o"></i> hello@company.com</p>
-          <p><i class="fa fa-phone"></i> 010-020-0340, 090-080-0760</p>
-          <p><i class="fa fa-map-marker"></i> 220 Another Roadside, Birdeye View, GO 54321</p>
+          <p><i class="fa fa-map-marker"></i>TJ Sokol Benešov u Prahy</p>
+          <p><i class="fa fa-map-marker"></i>Sportovní hala ZŠ Jiráskova</p>
+          <p><i class="fa fa-map-marker"></i>Jiráskova 888, Benešov 25601</p>
+          <p><i class="fa fa-envelope-o"></i>bene.volej@seznam.cz</p>
+          <p><i class="fa fa-phone"></i>+420 775 358 293</p>
         </address>
       </div>
     </div>
@@ -198,7 +273,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <p class="templatemo-copyright">Copyright © 2084 Your Company Name</p>
+        <p class="templatemo-copyright">Created by Martin Boháč - 2020</p>
         <ul class="social_icon">
           <li><a href="#" class="fa fa-facebook"></a></li>
           <li><a href="#" class="fa fa-twitter"></a></li>
