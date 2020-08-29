@@ -30,6 +30,23 @@ body {
   width: 60px;
 }
 
+.team .media-object img {
+  width: 150px;
+}
+
+.team .media-body img {
+  padding-top: 5px;
+  height: 25px;
+}
+
+.partners-icons img {
+  height: 20px;
+}
+
+.partners-icons li {
+  padding: 0 10px;
+}
+
 .cms .media {
   padding: 40px 0 20px 20px;
 }
@@ -54,10 +71,45 @@ body {
   background-image: url("assets/img/ball.svg");
 }
 
+.fa-hall {
+  background-image: url("assets/img/hall.svg");
+}
+
+.fa-phone {
+  background-image: url("assets/img/phone.svg");
+}
+
+.fa-email {
+  background-image: url("assets/img/email.svg");
+}
+
+.fa-facebook {
+  background-image: url("assets/img/facebook.svg");
+}
+
 .fa-icon {
   background-size: 45px;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.fa-icon-contacts {
+  background-size: 35px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contact address > div {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.contact address > div .fa {
+  margin-bottom: 0;
+}
+
+.contact address > div > div {
+  align-self: center;
 }
 
 @media only screen and (max-width: 767px) {
