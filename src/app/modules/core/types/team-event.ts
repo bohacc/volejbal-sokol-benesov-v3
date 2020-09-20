@@ -1,5 +1,5 @@
 export interface TeamEvent {
-  date: string;
+  date: Date;
   teamA: string;
   teamB: string;
   outEventTeam: string;

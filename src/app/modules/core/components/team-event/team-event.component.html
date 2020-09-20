@@ -5,7 +5,7 @@
     </div>
     <div class="media-body">
       <h4 class="media-heading text-uppercase"><strong>{{teamEvent?.teamA}}</strong> : {{teamEvent?.teamB}}</h4>
-      <h5>{{teamEvent?.date}}</h5>
+      <h5>{{teamEvent?.date | date: 'dd.MM.yyyy'}}</h5>
       <div *ngIf="!teamEvent?.outEventTeam" [ngClass]="{'home-event': !teamEvent?.outEventTeam}">
         Domácí zápas
         <a href="{{teamEvent?.eventUrl}}" target="_blank" *ngIf="!!teamEvent?.eventUrl">

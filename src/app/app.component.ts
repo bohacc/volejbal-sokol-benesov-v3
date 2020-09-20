@@ -1,122 +1,135 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TeamEvent } from './modules/core/types/team-event';
 import { Article } from './modules/core/types/article';
 import { Player } from './modules/core/types/player';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements  OnInit {
+  days: number;
+  hours: number;
+  minutes: number;
+  seconds: number;
+
+  ngOnInit(): void {
+    interval(1000)
+      .subscribe(() => {
+        this.tick();
+      });
+  }
+
   teamEvents: TeamEvent[] = [
     {
-      date: '3.10.2020',
+      date: new Date('2020-10-03T11:00:00.000+02:00'),
       teamA: 'Hronov',
       teamB: 'Benešov',
       outEventTeam: 'Hronov',
       eventUrl: null
     },
     {
-      date: '17.10.2020',
+      date: new Date('2020-10-17T11:00:00.000+02:00'),
       teamA: 'Benešov',
       teamB: 'M. Hradiště',
       outEventTeam: null,
       eventUrl: 'https://www.facebook.com/events/314490516274104/?acontext=%7B%22source%22%3A5%2C%22action_history%22%3A[%7B%22surface%22%3A%22page%22%2C%22mechanism%22%3A%22main_list%22%2C%22extra_data%22%3A%22%5C%22[]%5C%22%22%7D]%2C%22has_source%22%3Atrue%7D'
     },
     {
-      date: '31.10.2020',
+      date: new Date('2020-10-31T11:00:00.000+02:00'),
       teamA: 'Turnov',
       teamB: 'Benešov',
       outEventTeam: 'Turnov',
       eventUrl: null
     },
     {
-      date: '7.11.2020',
+      date: new Date('2020-11-07T11:00:00.000+02:00'),
       teamA: 'Benešov',
       teamB: 'Praga',
       outEventTeam: null,
       eventUrl: 'https://www.facebook.com/events/4021482401436881/?acontext=%7B%22source%22%3A5%2C%22action_history%22%3A[%7B%22surface%22%3A%22page%22%2C%22mechanism%22%3A%22main_list%22%2C%22extra_data%22%3A%22%5C%22[]%5C%22%22%7D]%2C%22has_source%22%3Atrue%7D'
     },
     {
-      date: '14.11.2020',
+      date: new Date('2020-11-14T10:00:00.000+02:00'),
       teamA: 'Malá Skála',
       teamB: 'Benešov',
       outEventTeam: 'Malá Skála',
       eventUrl: null
     },
     {
-      date: '29.11.2020',
+      date: new Date('2020-11-29T10:00:00.000+02:00'),
       teamA: 'Benešov',
       teamB: 'Kolín',
       outEventTeam: null,
       eventUrl: 'https://www.facebook.com/events/2952402298203704/?acontext=%7B%22source%22%3A5%2C%22action_history%22%3A[%7B%22surface%22%3A%22page%22%2C%22mechanism%22%3A%22main_list%22%2C%22extra_data%22%3A%22%5C%22[]%5C%22%22%7D]%2C%22has_source%22%3Atrue%7D'
     },
     {
-      date: '5.12.2020',
+      date: new Date('2020-12-05T09:00:00.000+02:00'),
       teamA: 'D. Králové n. L.',
       teamB: 'Benešov',
       outEventTeam: 'D. Králové n. L.',
       eventUrl: null
     },
     {
-      date: '12.12.2020',
+      date: new Date('2020-12-12T10:00:00.000+02:00'),
       teamA: 'Benešov',
       teamB: 'Prosek',
       outEventTeam: null,
       eventUrl: 'https://www.facebook.com/events/733167414181603/?acontext=%7B%22source%22%3A5%2C%22action_history%22%3A[%7B%22surface%22%3A%22page%22%2C%22mechanism%22%3A%22main_list%22%2C%22extra_data%22%3A%22%5C%22[]%5C%22%22%7D]%2C%22has_source%22%3Atrue%7D'
     },
     {
-      date: '9.1.2021',
+      date: new Date('2021-01-09T10:00:00.000+02:00'),
       teamA: 'Benešov',
       teamB: 'Hronov',
       outEventTeam: null,
       eventUrl: null
     },
     {
-      date: '23.1.2021',
+      date: new Date('2021-01-23T10:00:00.000+02:00'),
       teamA: 'M. Hradiště',
       teamB: 'Benešov',
       outEventTeam: 'M. Hradiště',
       eventUrl: null
     },
     {
-      date: '6.2.2021',
+      date: new Date('2021-02-06T11:00:00.000+02:00'),
       teamA: 'Benešov',
       teamB: 'Turnov',
       outEventTeam: null,
       eventUrl: null
     },
     {
-      date: '13.2.2021',
+      date: new Date('2021-02-13T10:00:00.000+02:00'),
       teamA: 'Praga',
       teamB: 'Benešov',
       outEventTeam: 'Praga',
       eventUrl: null
     },
     {
-      date: '20.2.2021',
+      date: new Date('2021-02-20T11:00:00.000+02:00'),
       teamA: 'Benešov',
       teamB: 'Malá Skála',
       outEventTeam: null,
       eventUrl: null
     },
     {
-      date: '6.3.2021',
+      date: new Date('2021-03-06T10:00:00.000+02:00'),
       teamA: 'Kolín',
       teamB: 'Benešov',
       outEventTeam: 'Kolín',
       eventUrl: null
     },
     {
-      date: '13.3.2021',
+      date: new Date('2021-03-13T11:00:00.000+02:00'),
       teamA: 'Benešov',
       teamB: 'D. Králové n. L.',
       outEventTeam: null,
       eventUrl: null
     },
     {
-      date: '20.3.2021',
+      date: new Date('2021-03-20T10:00:00.000+02:00'),
       teamA: 'Prosek',
       teamB: 'Benešov',
       outEventTeam: 'Prosek',
@@ -283,5 +296,23 @@ export class AppComponent {
       imageUrl: 'assets/img/players/votruba.png',
       social: 'https://www.facebook.com/viktor.votruba.5',
     },
-  ]
+  ];
+
+  tick() {
+    const nextEvents: TeamEvent[] = this.teamEvents.filter(item => item.date >= new Date());
+    if (!nextEvents || !nextEvents?.length) {
+      this.days = 0;
+      this.hours = 0;
+      this.minutes = 0;
+      this.seconds = 0;
+      return;
+    }
+    const dates: TeamEvent[] =
+      nextEvents.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+    const pom = dates[0].date.getTime() - new Date().getTime();
+    this.days = Math.floor(pom / (24 * 60 * 60 * 1000));
+    this.hours = Math.floor((pom - (this.days * 24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
+    this.minutes = Math.floor((pom - (this.days * 24 * 60 * 60 * 1000) - (this.hours * 60 * 60 * 1000)) / (60 * 1000));
+    this.seconds = Math.floor((pom - (this.days * 24 * 60 * 60 * 1000) - (this.hours * 60 * 60 * 1000) - (this.minutes * 60 * 1000)) / (1000));
+  }
 }
