@@ -1,0 +1,18 @@
+<div class="col-md-6 col-sm-6 wow fadeIn team-events" data-wow-delay="0.6s" style="padding-top: 10px;" [ngClass]="{'clear-both': even}">
+  <div class="media">
+    <div class="pull-left media-object">
+      <img src="assets/img/calendar.svg" class="img-circle img-responsive" alt="event img">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading text-uppercase"><strong>{{teamEvent?.teamA}}</strong> : {{teamEvent?.teamB}}</h4>
+      <h5>{{teamEvent?.date}}</h5>
+      <div *ngIf="!teamEvent?.outEventTeam" [ngClass]="{'home-event': !teamEvent?.outEventTeam}">
+        Domácí zápas
+        <a href="{{teamEvent?.eventUrl}}" target="_blank">
+          <img src="assets/img/facebook2.svg" alt="facebook">
+        </a>
+      </div>
+      <div *ngIf="teamEvent?.outEventTeam">{{teamEvent?.outEventTeam}}</div>
+    </div>
+  </div>
+</div>
