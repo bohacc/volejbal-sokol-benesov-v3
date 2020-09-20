@@ -8,7 +8,7 @@
       <h5>{{teamEvent?.date}}</h5>
       <div *ngIf="!teamEvent?.outEventTeam" [ngClass]="{'home-event': !teamEvent?.outEventTeam}">
         Domácí zápas
-        <a href="{{teamEvent?.eventUrl}}" target="_blank">
+        <a href="{{teamEvent?.eventUrl}}" target="_blank" *ngIf="!!teamEvent?.eventUrl">
           <img src="assets/img/facebook2.svg" alt="facebook">
         </a>
       </div>

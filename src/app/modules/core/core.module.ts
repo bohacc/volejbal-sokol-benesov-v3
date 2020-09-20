@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { PageHeaderComponent } from './components/page-header/page-header.component';
 import { CmsMessageComponent } from './components/cms-message/cms-message.component';
 import { TeamEventComponent } from './components/team-event/team-event.component';
+import { TeamArticleComponent } from './components/team-article/team-article.component';
+import { TeamPlayerComponent } from './components/team-player/team-player.component';
 
 
 
@@ -10,7 +12,9 @@ import { TeamEventComponent } from './components/team-event/team-event.component
   declarations: [
     PageHeaderComponent,
     CmsMessageComponent,
-    TeamEventComponent
+    TeamEventComponent,
+    TeamArticleComponent,
+    TeamPlayerComponent
   ],
   imports: [
     CommonModule
@@ -18,7 +22,9 @@ import { TeamEventComponent } from './components/team-event/team-event.component
   exports: [
     PageHeaderComponent,
     CmsMessageComponent,
-    TeamEventComponent
+    TeamEventComponent,
+    TeamArticleComponent,
+    TeamPlayerComponent
   ]
 })
 export class CoreModule { }

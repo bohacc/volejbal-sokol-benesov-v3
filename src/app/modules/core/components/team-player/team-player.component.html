@@ -1,0 +1,19 @@
+<div class="col-md-6 col-sm-6 border_right border_bottom wow fadeIn" data-wow-delay="0.6s"  style="min-height: 220px;"
+     [ngClass]="{'clear-both': even}">
+  <div class="media">
+    <div class="pull-left media-object">
+      <img [src]="player?.imageUrl" class="img-circle img-responsive" alt="team img">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading text-uppercase">{{player?.fullName}}</h4>
+      <h5>{{player?.roles}}</h5>
+      <div>Ročník {{player?.year}}</div>
+      <div *ngIf="player?.height">Výška {{player?.height}}</div>
+      <div *ngIf="player?.weight">Váha {{player?.weight}}</div>
+      <div *ngIf="player?.heightOfPlay">Dosah {{player?.heightOfPlay}}</div>
+      <div>
+        <a [href]="player.social"><img src="assets/img/facebook2.svg" alt="facebook"></a>
+      </div>
+    </div>
+  </div>
+</div>
