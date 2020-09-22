@@ -3,7 +3,8 @@
     "predeploy": "npm --prefix functions run build"
   },
   "hosting": {
-    "public": "dist/browser",
+    "public": "dist/volejbal-sokol-benesov-v3/browser",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {
         "source": "**",
