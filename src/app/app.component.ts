@@ -14,6 +14,10 @@ export class AppComponent implements  OnInit {
   hours: number;
   minutes: number;
   seconds: number;
+  daysText: string;
+  hoursText: string;
+  minutesText: string;
+  secondsText: string;
 
   ngOnInit(): void {
     interval(1000)
@@ -311,8 +315,42 @@ export class AppComponent implements  OnInit {
       nextEvents.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
     const pom = dates[0].date.getTime() - new Date().getTime();
     this.days = Math.floor(pom / (24 * 60 * 60 * 1000));
+    this.daysText = this.getDaysText(this.days);
     this.hours = Math.floor((pom - (this.days * 24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
+    this.hoursText = this.getHoursText(this.hours);
     this.minutes = Math.floor((pom - (this.days * 24 * 60 * 60 * 1000) - (this.hours * 60 * 60 * 1000)) / (60 * 1000));
+    this.minutesText = this.getMinutesText(this.minutes);
     this.seconds = Math.floor((pom - (this.days * 24 * 60 * 60 * 1000) - (this.hours * 60 * 60 * 1000) - (this.minutes * 60 * 1000)) / (1000));
+    this.secondsText = this.getSecondsText(this.seconds);
+  }
+
+  getDaysText(value: number): string {
+    const texts: string[] = ['Den', 'Dny', 'Dní'];
+    return this.getTextByIndex(texts, value);
+  }
+
+  getHoursText(value: number): string {
+    const texts: string[] = ['Hodina', 'Hodiny', 'Hodin'];
+    return this.getTextByIndex(texts, value);
+  }
+
+  getMinutesText(value: number): string {
+    const texts: string[] = ['Minuta', 'Minuty', 'Minut'];
+    return this.getTextByIndex(texts, value);
+  }
+
+  getSecondsText(value: number): string {
+    const texts: string[] = ['Sekunda', 'Sekundy', 'Sekund'];
+    return this.getTextByIndex(texts, value);
+  }
+
+  getTextByIndex(texts: string[], value: number): string {
+    if (value === 1) {
+      return texts[0];
+    } else if (value > 1 && value < 5) {
+      return texts[1];
+    } else {
+      return texts[2];
+    }
   }
 }
