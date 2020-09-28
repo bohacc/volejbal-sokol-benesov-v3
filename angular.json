@@ -128,7 +128,10 @@
           "options": {
             "outputPath": "dist/volejbal-sokol-benesov-v3/server",
             "main": "server.ts",
-            "tsConfig": "tsconfig.server.json"
+            "tsConfig": "tsconfig.server.json",
+            "externalDependencies": [
+              "@firebase/firestore"
+            ]
           },
           "configurations": {
             "production": {
@@ -169,8 +172,15 @@
           "configurations": {
             "production": {}
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "ssr": true
+          }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "volejbal-sokol-benesov-v3"
 }

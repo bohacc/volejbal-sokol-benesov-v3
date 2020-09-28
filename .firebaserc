@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "volejbal-sokol-benesov"
+  },
+  "targets": {
+    "volejbal-sokol-benesov": {
+      "hosting": {
+        "volejbal-sokol-benesov-v3": [
+          "volejbal-sokol-benesov"
+        ]
+      }
+    }
   }
 }

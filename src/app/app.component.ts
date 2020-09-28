@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
 import { TeamEvent } from './modules/core/types/team-event';
 import { Article } from './modules/core/types/article';
 import { Player } from './modules/core/types/player';
 import { interval } from 'rxjs';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -19,11 +20,16 @@ export class AppComponent implements  OnInit {
   minutesText: string;
   secondsText: string;
 
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {
+  }
+
   ngOnInit(): void {
-    interval(1000)
-      .subscribe(() => {
-        this.tick();
-      });
+    if (isPlatformBrowser(this.platformId)) {
+      interval(1000)
+        .subscribe(() => {
+          this.tick();
+        });
+    }
   }
 
   teamEvents: TeamEvent[] = [
