@@ -2,12 +2,16 @@
 .topnav {
   overflow: hidden;
   // background-color: #111103;
-  position: relative;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
   // box-shadow: 0 1px gray;
   color: white;
   // padding: 14px 16px;
   text-decoration: none;
   background-color: #000;
+  z-index: 999;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
