@@ -220,6 +220,13 @@ export class AppComponent implements  OnInit {
       height: '189 cm'
     },
     {
+      fullName: 'Čech Ondřej',
+      year: '1984',
+      roles: 'Blokař',
+      imageUrl: 'assets/img/players/no-person.png',
+      social: null
+    },
+    {
       fullName: 'Hájek Michal',
       year: '1982',
       roles: 'Blokař',
@@ -253,6 +260,13 @@ export class AppComponent implements  OnInit {
       roles: 'Blokař, trenér',
       imageUrl: 'assets/img/players/koci.png',
       social: 'https://www.facebook.com/petr.koci.75',
+    },
+    {
+      fullName: 'Kozel Jakub',
+      year: '2001',
+      roles: 'Smečař',
+      imageUrl: 'assets/img/players/no-person.png',
+      social: 'https://www.facebook.com/jakub.kozel.9',
     },
     {
       fullName: 'Kunc Martin',
