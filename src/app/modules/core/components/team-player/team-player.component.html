@@ -11,7 +11,7 @@
       <div *ngIf="player?.height">Výška {{player?.height}}</div>
       <div *ngIf="player?.weight">Váha {{player?.weight}}</div>
       <div *ngIf="player?.heightOfPlay">Dosah {{player?.heightOfPlay}}</div>
-      <div>
+      <div *ngIf="player?.social">
         <a [href]="player.social"><img src="assets/img/facebook2.svg" alt="facebook"></a>
       </div>
     </div>
