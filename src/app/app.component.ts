@@ -265,7 +265,7 @@ export class AppComponent implements  OnInit {
     {
       fullName: 'Kysela Ondřej',
       year: '1991',
-      roles: 'Univerál, libero',
+      roles: 'Univerzál, libero',
       imageUrl: 'assets/img/players/no-person.png',
       social: 'https://www.facebook.com/ondrej.kysela.7',
     },
