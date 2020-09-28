@@ -152,7 +152,7 @@ export class AppComponent implements  OnInit {
       imageUrl: 'assets/img/dress2.svg',
       date: '28.8.2020',
       title: 'Jdeme do sezóny v nových dresech',
-      description: 'Letos budeme začínat soutěž v nových dresech. Věříme že nám sednou stejně dobře jako zápasy v druhé lize a přinesou nám štěstí.'
+      description: 'Letos budeme začínat soutěž v nových dresech. Věříme, že nám sednou stejně dobře jako zápasy v druhé lize a přinesou nám štěstí.'
     },
     {
       imageUrl: 'assets/img/cross.svg',
