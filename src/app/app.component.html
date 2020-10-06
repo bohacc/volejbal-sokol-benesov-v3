@@ -49,23 +49,21 @@
   <div class="container main-content">
     <div class="row news">
       <div class="col-md-6 col-sm-6 pb-3">
-        <app-cms-message style="display: contents"
-                         [date]="'28.8.2020'"
-                         [title]="'Jdeme do sezóny v nových dresech'"
-                         [image]="'assets/img/dress2.svg'"
+        <app-cms-message style="display: contents" *ngIf="sortArticles[0] as article1"
+                         [date]="article1.date"
+                         [title]="article1.shortTitle || article1.title"
+                         [image]="article1.imageUrl"
         >
-          Letos budeme začínat soutěž v nových dresech. Věříme, že nám sednou stejně dobře jako zápasy v druhé lize a
-          přinesou nám štěstí.
+          {{article1.shortTitle ? article1.title : article1.description}} <a [attr.href]="'#' + article1.target" *ngIf="article1.target">Celá zpráva...</a>
         </app-cms-message>
       </div>
       <div class="col-md-6 col-sm-6">
-        <app-cms-message style="display: contents" class="col-md-6 col-sm-6"
-                         [date]="'16.2.2020'"
-                         [title]="'Smutná zpráva'"
-                         [image]="'assets/img/cross.svg'"
+        <app-cms-message style="display: contents" class="col-md-6 col-sm-6" *ngIf="sortArticles[1] as article2"
+                         [date]="article2.date"
+                         [title]="article2.shortTitle || article2.title"
+                         [image]="article2.imageUrl"
         >
-          Smutná zpráva benešovského volejbalu. Se zármutkem v našich volejbalových srdcích Vám oznamujeme, že z
-          našich řad odešli Jiří Kosík a Viktor Jiráček senior. <a href="#articles1">Celá zpráva...</a>
+          {{article2.shortTitle ? article2.title : article2.description}} <a [attr.href]="'#' + article2.target" *ngIf="article2.target">Celá zpráva...</a>
         </app-cms-message>
       </div>
     </div>

@@ -19,8 +19,10 @@ export class AppComponent implements  OnInit {
   hoursText: string;
   minutesText: string;
   secondsText: string;
+  sortArticles: Article[] = [];
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {
+    this.sortArticles = this.teamArticles.sort((a, b) => b.date.getTime() - a.date.getTime());
   }
 
   ngOnInit(): void {
@@ -149,14 +151,32 @@ export class AppComponent implements  OnInit {
 
   teamArticles: Article[] = [
     {
+      imageUrl: 'assets/img/cup.svg',
+      target: 'article1',
+      date: new Date('2020-10-06T10:00:00.000+02:00'),
+      shortTitle: 'Český pohár',
+      title: 'Postupem do 2 ligy dostal Sokol Benešov možnost hrát v celonárodní soutěži s top kluby v ČR a to v Českém poháru.',
+      description: 'Postupem do 2 ligy dostal Sokol Benešov možnost hrát v celonárodní soutěži s top kluby v ČR a to v Českém poháru. První kolo této soutěže se uskutečnilo 26. – 27.9. 2020 v Chocni. Do prvního kola skupiny B Českého poháru byli nalosováni s týmy VK Benátky nad Jizerou (1. liga), TJ Sokol Letovice (2. liga), VK Choceň (2. liga) a TJ Sokol Benešov (nováček 2 ligy). Díky zdravotním komplikacím vyjela na turnajový víkend benešovská sestava bez klasického univerzála a pouze s jedním nahrávačem. Z lavičky tým koučoval a doprovázel zraněný nahrávač Jiří Hlavnička.\n' +
+        'Benešov x Benátky (0:3)<br><br> \n' +
+        'Na první zápas Benešov nastoupil proti favoritovi skupiny B, VK Benátky nad Jizerou, s bývalými extraligovými hráči (např. Vítek Bartůňěk – kapitán Benátek). Na benešovském družstvu byla patrná nervozita, která se projevila v prvním setu s výsledkem 25:10. Od druhého setu benešovští oklepali nervozitu a ve střední části setů drželi krok s favoritem. Zvláště proti útoku středem favorit nenašel obranu. V závěru setů se projevila kvalita družstva Benátek a sety skončili stejným výsledkem 17:25 a 17:25.\n' +
+        'Benešov x Choceň (0:3)<br><br>\n' +
+        'Do druhého zápasu benešovští nastoupili s chutí a předváděli slušnou a vyrovnanou hrou. Přes veškeré snažení hostů skončili sety 19:25, 21:25, 22:25. Rozdíl mezi hrou Benešova a Chocně byla v kvalitě přijmu a servisu. I přes nelichotivý stav na sety benešovští předvedli dobrou hru a rozhodně se v 2 lize, pokud budou předvádět takové výkony nemají čeho bát.\n' +
+        'Benešov Letovice (0:3)<br><br>\n' +
+        'V neděli nastoupil tým Benešova ve zdecimované sestavě čítající 7 lidí. Bez klasického libera a univerzálního Jana Kyselky (do té doby nastoupil na postech univerzála, smečaře i univerzála). Role libera se ujal Martin Kunc a nutno říci, že z jeho strany to byl nejlepší výkon na Českém poháru. Bez možnosti střídání tým Benešova odehrál to na co v danou situaci měl.\n' +
+        'Co říci závěrem. Tým Benešova rozhodně neudělal ostudu, turnaj s kvalitními soupeři prověřil jeho formu a znamenal cenné zkušenosti, které lze využít v následujících kláních. Tým si získal podporu domácích fanoušků a zejména díky Viktorovi Votrubovi zahájili družbu s domácím celkem s příslibem další spolupráce.'
+    },
+    {
       imageUrl: 'assets/img/dress2.svg',
-      date: '28.8.2020',
+      target: 'article2',
+      date: new Date('2020-08-28T10:00:00.000+02:00'),
       title: 'Jdeme do sezóny v nových dresech',
       description: 'Letos budeme začínat soutěž v nových dresech. Věříme, že nám sednou stejně dobře jako zápasy v druhé lize a přinesou nám štěstí.'
     },
     {
       imageUrl: 'assets/img/cross.svg',
-      date: '16.2.2020',
+      target: '#article2',
+      date: new Date('2020-02-16T10:00:00.000+02:00'),
+      shortTitle: 'Smutná zpráva',
       title: 'Vážení přátelé benešovského volejbalu. Se zármutkem v našich volejbalových srdcích Vám oznamujeme, že z našich řad odešli Jiří Kosík a Viktor Jiráček senior.',
       description: '<strong>Jiří Kosík</strong> (12.2.2020 - nedožitých 73 let). Byl dlouholetým členem volejbalového oddílu\n' +
         '        TJ Lokomotiva\n' +
@@ -332,7 +352,7 @@ export class AppComponent implements  OnInit {
       return;
     }
     const dates: TeamEvent[] =
-      nextEvents.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+      nextEvents.sort((a, b) => a.date.getTime() - b.date.getTime());
     const pom = dates[0].date.getTime() - new Date().getTime();
     this.days = Math.floor(pom / (24 * 60 * 60 * 1000));
     this.daysText = this.getDaysText(this.days);

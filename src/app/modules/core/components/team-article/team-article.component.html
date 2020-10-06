@@ -1,11 +1,11 @@
-<div class="col-md-12 col-sm-12 border_bottom wow fadeIn" data-wow-delay="0.6s" id="articles1">
+<div class="col-md-12 col-sm-12 border_bottom wow fadeIn" data-wow-delay="0.6s" [attr.id]="article?.target">
   <div class="media">
     <div class="pull-left media-object" style="min-width: 200px">
       <img [src]="article?.imageUrl" class="ximg-circle img-responsive" alt="team img">
     </div>
     <div class="media-body">
       <h4 class="media-heading text-uppercase">{{article?.title}}</h4>
-      <h5>{{article?.date}}</h5>
+      <h5>{{article?.date | date: 'dd.MM.yyyy'}}</h5>
       <p [innerHTML]="article?.description"></p>
     </div>
   </div>
