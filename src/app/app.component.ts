@@ -151,6 +151,20 @@ export class AppComponent implements  OnInit {
 
   teamArticles: Article[] = [
     {
+      imageUrl: 'assets/img/article.svg',
+      target: 'article3',
+      date: new Date('2020-10-08T10:00:00.000+02:00'),
+      shortTitle: 'Benešov x Hronov',
+      title: 'Prvním soupeřem benešovských byl trvalý účastník 2. ligy – VK Hronov.',
+      description: '2 liga zahájena. Sokol Benešov se do ní vrátil po 50 letech. Prvním soupeřem benešovských byl trvalý účastník 2. ligy – VK Hronov. VK Hronov bojuje každý rok o první příčky tabulky a svou kvalitu dokázal i tento víkend. Vlivem zdravotních komplikací vyjela na úvodní utkání oslabená sedmičlenná sestava Benešova. <br><br>' +
+        '1. Zápas VK Hronov x TJ Sokol Benešov u Prahy (0 : 3)- (25: 17; 20; 14)\n' +
+        'Sestava Benešov – M. Hájek, Mi. Janák, Ma. Janák, J. Kozel, O. Kysela, J. Kyselka, M. Šupka\n' +
+        'V prvním setu byla benešovském týmu znát nervozita a jistá nesehranost. I když se vše snažili nahradit bojovností, nestačilo to na více než 17 bodů. V druhém setu se síly vyrovnaly a až do střední části setu byly týmy vyrovnanými soupeři. Následně se ukázala kvalita domácího celku, který těžkým plachtícím servisem a skvělou obranou utekl benešovským a ukončil set za stavu 25:20. Třetí set byl už plně v režii domácích, benešovští nenašli sílu na odpor a set skončil 25:14.\n' +
+        '<br><br>' +
+        '2. Zápas VK Hronov x TJ Sokol Benešov u Prahy (0 : 3)- (25: 16, 17, 22)\n' +
+        'Sestava Benešov – M. Hájek, Mi. Janák, Ma. Janák, J. Kozel, O. Kysela, J. Kyselka, M. Šupka',
+    },
+    {
       imageUrl: 'assets/img/cup.svg',
       target: 'article1',
       date: new Date('2020-10-06T10:00:00.000+02:00'),
