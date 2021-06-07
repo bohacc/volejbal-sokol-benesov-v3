@@ -151,6 +151,15 @@ export class AppComponent implements  OnInit {
 
   teamArticles: Article[] = [
     {
+      imageUrl: 'assets/img/memorial.jpeg',
+      target: 'article4',
+      date: new Date('2021-06-07T10:00:00.000+02:00'),
+      shortTitle: 'Memoriál Viktorů Jiráčků - 19.6.2021',
+      title: 'Memoriál - Volejbalový turnaj',
+      description: 'Zveme vás na 5. ročník memoriálu na počest Viktorů Jiráčků. Memoriál se bude konat 19.6.2021 v trampské osadě Albatros (Městečko u Benešova)' +
+        'Akce začíná v 8:30. Občerstvení bude zajištěno, následně pak posezení u táboráku s hudbou. Přijeďte si zahrát nebo jenom zafandit a pobavit se.',
+    },
+    {
       imageUrl: 'assets/img/article.svg',
       target: 'article3',
       date: new Date('2020-10-08T10:00:00.000+02:00'),
