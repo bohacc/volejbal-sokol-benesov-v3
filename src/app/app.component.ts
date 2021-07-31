@@ -79,9 +79,9 @@ export class AppComponent implements  OnInit {
     },
     {
       date: new Date('2021-12-04T10:00:00.000+02:00'),
-      teamA: 'Hronov',
-      teamB: 'Benešov',
-      outEventTeam: 'Hronov',
+      teamA: 'Benešov',
+      teamB: 'Hronov',
+      outEventTeam: '',
       eventUrl: null
     },
     {
