@@ -256,6 +256,13 @@ export class AppComponent implements  OnInit {
       social: null
     },
     {
+      fullName: 'Eisenberger Michal',
+      year: '2000',
+      roles: 'Univerzál',
+      imageUrl: 'assets/img/players/eisenberger.png',
+      social: 'https://www.facebook.com/michal.eisenberger.7',
+    },
+    {
       fullName: 'Hájek Michal',
       year: '1982',
       roles: 'Blokař',
@@ -263,11 +270,24 @@ export class AppComponent implements  OnInit {
       social: 'https://www.facebook.com/michal.hajek.50',
     },
     {
+      fullName: 'Havránek Tomáš',
+      year: '2003',
+      roles: 'Smečař',
+      imageUrl: 'assets/img/players/no-person.png',
+    },
+    {
       fullName: 'Hlavnička Jiří',
       year: '1982',
       roles: 'Nahrávač',
       imageUrl: 'assets/img/players/hlavnicka.png',
       social: 'https://www.facebook.com/jiri.hlavnicka.9',
+    },
+    {
+      fullName: 'Hudeček Martin',
+      year: '1984',
+      roles: 'Smečař',
+      imageUrl: 'assets/img/players/no-person.png',
+      social: 'https://www.facebook.com/martin.hudecek.167',
     },
     {
       fullName: 'Janák Martin',
@@ -280,7 +300,7 @@ export class AppComponent implements  OnInit {
       fullName: 'Janák Michal',
       year: '1985',
       roles: 'Nahrávač',
-      imageUrl: 'assets/img/players/no-person.png',
+      imageUrl: 'assets/img/players/janakmi.png',
       social: 'https://www.facebook.com/michal.janak.96',
     },
     {
@@ -294,24 +314,24 @@ export class AppComponent implements  OnInit {
       fullName: 'Kozel Jakub',
       year: '2001',
       roles: 'Smečař',
-      imageUrl: 'assets/img/players/no-person.png',
+      imageUrl: 'assets/img/players/kozel.png',
       social: 'https://www.facebook.com/jakub.kozel.9',
     },
-    {
+    /*{
       fullName: 'Kunc Martin',
       year: '1981',
       roles: 'Univarzál, blokař, libero',
       imageUrl: 'assets/img/players/kunc.png',
       social: 'https://www.facebook.com/kivik',
       height: '189 cm'
-    },
-    {
+    },*/
+    /*{
       fullName: 'Kysela Ondřej',
       year: '1991',
       roles: 'Univerzál, libero',
       imageUrl: 'assets/img/players/no-person.png',
       social: 'https://www.facebook.com/ondrej.kysela.7',
-    },
+    },*/
     {
       fullName: 'Kyselka Jan',
       year: '1985',
@@ -319,12 +339,19 @@ export class AppComponent implements  OnInit {
       imageUrl: 'assets/img/players/kyselka.png',
       social: 'https://www.facebook.com/jan.kyselka.39',
     },
-    {
+    /*{
       fullName: 'Lang Michal',
       year: '1984',
       roles: 'Libero, smečař, univerzál',
       imageUrl: 'assets/img/players/lang.png',
       social: 'https://www.facebook.com/michal.lang.18',
+    },*/
+    {
+      fullName: 'Pina Ondřej',
+      year: '1981',
+      roles: 'Smečař',
+      imageUrl: 'assets/img/players/no-person',
+      social: 'https://www.facebook.com/ondrej.pina.16',
     },
     {
       fullName: 'Řehák Petr',
