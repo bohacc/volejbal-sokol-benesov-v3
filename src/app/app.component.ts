@@ -350,7 +350,7 @@ export class AppComponent implements  OnInit {
       fullName: 'Pina Ondřej',
       year: '1981',
       roles: 'Smečař',
-      imageUrl: 'assets/img/players/no-person',
+      imageUrl: 'assets/img/players/no-person.png',
       social: 'https://www.facebook.com/ondrej.pina.16',
     },
     {
