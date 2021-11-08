@@ -57,77 +57,77 @@ export class AppComponent implements  OnInit {
       eventUrl: null
     },
     {
-      date: new Date('2021-11-06T10:00:00.000+02:00'),
+      date: new Date('2021-11-13T11:00:00.000+01:00'),
       teamA: 'Malá Skála',
       teamB: 'Benešov',
       outEventTeam: 'Malá Skála',
       eventUrl: ''
     },
     {
-      date: new Date('2021-11-20T10:00:00.000+02:00'),
+      date: new Date('2021-11-20T10:00:00.000+01:00'),
       teamA: 'Benešov',
       teamB: 'Prosek',
       outEventTeam: '',
       eventUrl: null
     },
     {
-      date: new Date('2021-11-27T10:00:00.000+02:00'),
+      date: new Date('2021-11-27T10:00:00.000+01:00'),
       teamA: 'Praga',
       teamB: 'Benešov',
       outEventTeam: 'Praga',
       eventUrl: ''
     },
     {
-      date: new Date('2021-12-04T10:00:00.000+02:00'),
+      date: new Date('2021-12-04T10:00:00.000+01:00'),
       teamA: 'Benešov',
       teamB: 'Hronov',
       outEventTeam: '',
       eventUrl: null
     },
     {
-      date: new Date('2022-01-15T10:00:00.000+02:00'),
+      date: new Date('2022-01-15T10:00:00.000+01:00'),
       teamA: 'Benešov',
       teamB: 'Mn. Hradiště',
       outEventTeam: null,
       eventUrl: ''
     },
     {
-      date: new Date('2022-01-22T10:00:00.000+02:00'),
+      date: new Date('2022-01-22T10:00:00.000+01:00'),
       teamA: 'Dvůr Králové',
       teamB: 'Benešov',
       outEventTeam: 'Dvůr Králové',
       eventUrl: null
     },
     {
-      date: new Date('2022-02-05T10:00:00.000+02:00'),
+      date: new Date('2022-02-05T10:00:00.000+01:00'),
       teamA: 'Benešov',
       teamB: 'Kolín',
       outEventTeam: '',
       eventUrl: null
     },
     {
-      date: new Date('2022-02-19T10:00:00.000+02:00'),
+      date: new Date('2022-02-19T10:00:00.000+01:00'),
       teamA: 'Benešov',
       teamB: 'Malá Skála',
       outEventTeam: null,
       eventUrl: null
     },
     {
-      date: new Date('2022-02-26T10:00:00.000+02:00'),
+      date: new Date('2022-02-26T10:00:00.000+01:00'),
       teamA: 'Prosek',
       teamB: 'Benešov',
       outEventTeam: 'Prosek',
       eventUrl: null
     },
     {
-      date: new Date('2022-03-05T10:00:00.000+02:00'),
+      date: new Date('2022-03-05T10:00:00.000+01:00'),
       teamA: 'Benešov',
       teamB: 'Praga',
       outEventTeam: null,
       eventUrl: null
     },
     {
-      date: new Date('2022-03-19T10:00:00.000+02:00'),
+      date: new Date('2022-03-19T10:00:00.000+01:00'),
       teamA: 'Hronov',
       teamB: 'Benešov',
       outEventTeam: 'Hronov',
