@@ -36,117 +36,103 @@ export class AppComponent implements  OnInit {
 
   teamEvents: TeamEvent[] = [
     {
-      date: new Date('2022-10-02T10:00:00.000+02:00'),
+      date: new Date('2023-10-07T11:00:00.000+02:00'),
       teamA: 'Benešov',
-      teamB: 'Mělník',
+      teamB: 'Tuchlovice',
       outEventTeam: null,
       eventUrl: null
     },
     {
-      date: new Date('2021-10-08T10:00:00.000+02:00'),
+      date: new Date('2023-10-14T10:00:00.000+02:00'),
       teamA: 'Nymburk',
       teamB: 'Benešov',
       outEventTeam: 'Nymburk',
       eventUrl: ''
     },
     {
-      date: new Date('2022-10-15T11:00:00.000+02:00'),
+      date: new Date('2023-10-22T11:00:00.000+02:00'),
       teamA: 'Benešov',
-      teamB: 'Dobříš A',
+      teamB: 'Mělník',
       outEventTeam: null,
       eventUrl: null
     },
     {
-      date: new Date('2022-10-22T10:00:00.000+01:00'),
-      teamA: 'Vlašim',
-      teamB: 'Benešov',
-      outEventTeam: 'Vlašim',
-      eventUrl: ''
-    },
-    {
-      date: new Date('2022-11-05T10:00:00.000+01:00'),
-      teamA: 'Benešov',
-      teamB: 'Tuchlovice',
-      outEventTeam: '',
-      eventUrl: null
-    },
-    {
-      date: new Date('2022-11-12T10:00:00.000+01:00'),
-      teamA: 'Roztoky',
-      teamB: 'Benešov',
-      outEventTeam: 'Roztoky',
-      eventUrl: ''
-    },
-    {
-      date: new Date('2022-11-26T11:00:00.000+01:00'),
-      teamA: 'Benešov',
-      teamB: 'Zruč n. Sáz.',
-      outEventTeam: '',
-      eventUrl: null
-    },
-    {
-      date: new Date('2022-12-03T13:30:00.000+01:00'),
+      date: new Date('2023-11-04T09:00:00.000+01:00'),
       teamA: 'Dobřichovice B',
       teamB: 'Benešov',
       outEventTeam: 'Dobřichovice B',
       eventUrl: ''
     },
     {
-      date: new Date('2023-01-14T10:00:00.000+01:00'),
-      teamA: 'Mělník',
-      teamB: 'Benešov',
-      outEventTeam: 'Mělník',
+      date: new Date('2023-11-11T11:00:00.000+01:00'),
+      teamA: 'Benešov',
+      teamB: 'Zruč nad Sázavou',
+      outEventTeam: '',
       eventUrl: null
     },
     {
-      date: new Date('2023-01-21T11:00:00.000+01:00'),
+      date: new Date('2023-11-25T11:00:00.000+01:00'),
+      teamA: 'Roztoky',
+      teamB: 'Benešov',
+      outEventTeam: 'Roztoky',
+      eventUrl: ''
+    },
+    {
+      date: new Date('2023-12-02T11:00:00.000+01:00'),
+      teamA: 'Benešov',
+      teamB: 'Vlašim',
+      outEventTeam: '',
+      eventUrl: null
+    },
+    {
+      date: new Date('2024-01-27T10:00:00.000+01:00'),
+      teamA: 'Tuchlovice',
+      teamB: 'Benešov',
+      outEventTeam: 'Tuchlovice',
+      eventUrl: ''
+    },
+    {
+      date: new Date('2024-02-10T11:00:00.000+01:00'),
       teamA: 'Benešov',
       teamB: 'Nymburk',
       outEventTeam: '',
       eventUrl: null
     },
     {
-      date: new Date('2023-01-28T10:00:00.000+01:00'),
-      teamA: 'Dobříš A',
+      date: new Date('2024-02-17T10:00:00.000+01:00'),
+      teamA: 'Mělník',
       teamB: 'Benešov',
-      outEventTeam: 'Dobříš A',
+      outEventTeam: 'Mělník',
       eventUrl: null
     },
     {
-      date: new Date('2023-02-11T11:00:00.000+01:00'),
+      date: new Date('2024-02-24T11:00:00.000+01:00'),
       teamA: 'Benešov',
-      teamB: 'Vlašim',
-      outEventTeam: null,
+      teamB: 'Dobřichovice B',
+      outEventTeam: '',
       eventUrl: null
     },
     {
-      date: new Date('2023-02-18T10:00:00.000+01:00'),
-      teamA: 'Tuchlovice',
+      date: new Date('2024-03-09T11:00:00.000+01:00'),
+      teamA: 'Zruč nad Sázavou',
       teamB: 'Benešov',
-      outEventTeam: 'Tuchlovice',
+      outEventTeam: 'Zruč nad Sázavou',
       eventUrl: null
     },
     {
-      date: new Date('2023-02-25T11:00:00.000+01:00'),
+      date: new Date('2024-03-17T11:00:00.000+01:00'),
       teamA: 'Benešov',
       teamB: 'Roztoky',
       outEventTeam: null,
       eventUrl: null
     },
     {
-      date: new Date('2023-03-18T10:00:00.000+01:00'),
-      teamA: 'Zruč n. Sáz.',
+      date: new Date('2024-03-23T10:00:00.000+01:00'),
+      teamA: 'Vlašim',
       teamB: 'Benešov',
-      outEventTeam: 'Zruč n. Sáz.',
+      outEventTeam: 'Vlašim',
       eventUrl: null
-    },
-    {
-      date: new Date('2023-03-25T10:00:00.000+02:00'),
-      teamA: 'Benešov',
-      teamB: 'Dobřichovice B',
-      outEventTeam: null,
-      eventUrl: null
-    },
+    }
   ];
 
   teamArticles: Article[] = [
@@ -349,6 +335,13 @@ export class AppComponent implements  OnInit {
       social: 'https://www.facebook.com/petr.koci.75',
     },
     {
+      fullName: 'Kohout Adam',
+      year: '2002',
+      roles: 'Nahrávač',
+      imageUrl: 'assets/img/players/no-person.png',
+      social: null,
+    },
+    {
       fullName: 'Kozel Jakub',
       year: '2001',
       roles: 'Smečař',
@@ -403,7 +396,7 @@ export class AppComponent implements  OnInit {
     {
       fullName: 'Pilař Petr',
       year: '1993',
-      roles: 'Smečař',
+      roles: 'Nahrávač',
       imageUrl: 'assets/img/players/no-person.png',
       social: null,
     },
