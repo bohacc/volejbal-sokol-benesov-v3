@@ -71,66 +71,66 @@ export class AppComponent implements  OnInit {
       eventUrl: null
     },
     {
-      date: new Date('2023-11-25T11:00:00.000+01:00'),
+      date: new Date('2023-11-23T10:00:00.000+01:00'),
+      teamA: 'Benešov',
+      teamB: 'Zruč nad Sázavou',
+      outEventTeam: '',
+      eventUrl: ''
+    },
+    {
+      date: new Date('2023-11-30T10:00:00.000+01:00'),
+      teamA: 'Tuchlovice A',
+      teamB: 'Benešov',
+      outEventTeam: 'Tuchlovice A',
+      eventUrl: null
+    },
+    {
+      date: new Date('2024-01-25T10:00:00.000+01:00'),
       teamA: 'Roztoky',
       teamB: 'Benešov',
       outEventTeam: 'Roztoky',
       eventUrl: ''
     },
     {
-      date: new Date('2023-12-02T11:00:00.000+01:00'),
+      date: new Date('2024-02-08T10:00:00.000+01:00'),
+      teamA: 'Nymburk',
+      teamB: 'Benešov',
+      outEventTeam: 'Nymburk',
+      eventUrl: null
+    },
+    {
+      date: new Date('2024-02-15T11:00:00.000+01:00'),
       teamA: 'Benešov',
       teamB: 'Vlašim',
-      outEventTeam: '',
+      outEventTeam: 'Vlašim',
       eventUrl: null
     },
     {
-      date: new Date('2024-01-27T10:00:00.000+01:00'),
-      teamA: 'Tuchlovice',
-      teamB: 'Benešov',
-      outEventTeam: 'Tuchlovice',
-      eventUrl: ''
-    },
-    {
-      date: new Date('2024-02-10T11:00:00.000+01:00'),
-      teamA: 'Benešov',
-      teamB: 'Nymburk',
-      outEventTeam: '',
-      eventUrl: null
-    },
-    {
-      date: new Date('2024-02-17T10:00:00.000+01:00'),
+      date: new Date('2024-02-22T10:00:00.000+01:00'),
       teamA: 'Mělník',
       teamB: 'Benešov',
       outEventTeam: 'Mělník',
       eventUrl: null
     },
     {
-      date: new Date('2024-02-24T11:00:00.000+01:00'),
+      date: new Date('2024-03-08T11:00:00.000+01:00'),
       teamA: 'Benešov',
-      teamB: 'Dobřichovice B',
+      teamB: 'Kralupy',
       outEventTeam: '',
       eventUrl: null
     },
     {
-      date: new Date('2024-03-09T11:00:00.000+01:00'),
+      date: new Date('2024-03-15T10:00:00.000+01:00'),
       teamA: 'Zruč nad Sázavou',
       teamB: 'Benešov',
       outEventTeam: 'Zruč nad Sázavou',
       eventUrl: null
     },
     {
-      date: new Date('2024-03-17T11:00:00.000+01:00'),
+      date: new Date('2024-03-23T11:00:00.000+01:00'),
       teamA: 'Benešov',
-      teamB: 'Roztoky',
-      outEventTeam: null,
-      eventUrl: null
-    },
-    {
-      date: new Date('2024-03-23T10:00:00.000+01:00'),
-      teamA: 'Vlašim',
-      teamB: 'Benešov',
-      outEventTeam: 'Vlašim',
+      teamB: 'Tuchlovice A',
+      outEventTeam: '',
       eventUrl: null
     }
   ];
@@ -292,13 +292,13 @@ export class AppComponent implements  OnInit {
       roles: 'Smečař',
       imageUrl: 'assets/img/players/no-person.png',
     },
-    {
+    /*{
       fullName: 'Hlavnička Jiří',
       year: '1982',
       roles: 'Nahrávač',
       imageUrl: 'assets/img/players/hlavnicka.png',
       social: 'https://www.facebook.com/jiri.hlavnicka.9',
-    },
+    },*/
     /*{
       fullName: 'Hudeček Martin',
       year: '1984',
@@ -370,6 +370,13 @@ export class AppComponent implements  OnInit {
       imageUrl: 'assets/img/players/kyselka.png',
       social: 'https://www.facebook.com/jan.kyselka.39',
     },
+    {
+      fullName: 'Staněk Ondřej',
+      year: '1994',
+      roles: 'Blokař',
+      imageUrl: 'assets/img/players/no-person.png',
+      social: '',
+    },
     /*{
       fullName: 'Lang Michal',
       year: '1984',
@@ -393,7 +400,7 @@ export class AppComponent implements  OnInit {
       height: '190 cm',
       heightOfPlay: '330 cm'
     },*/
-    {
+    /*{
       fullName: 'Pilař Petr',
       year: '1993',
       roles: 'Nahrávač',
@@ -406,7 +413,7 @@ export class AppComponent implements  OnInit {
       roles: 'Smečař',
       imageUrl: 'assets/img/players/no-person.png',
       social: 'https://www.facebook.com/matej.supka.5',
-    },
+    },*/
     {
       fullName: 'Votruba Viktor',
       year: '1977',
