@@ -36,98 +36,98 @@ export class AppComponent implements  OnInit {
 
   teamEvents: TeamEvent[] = [
     {
-      date: new Date('2023-10-07T11:00:00.000+02:00'),
+      date: new Date('2024-10-05T11:00:00.000+02:00'),
       teamA: 'Benešov',
-      teamB: 'Tuchlovice',
+      teamB: 'Roztoky',
       outEventTeam: null,
       eventUrl: null
     },
     {
-      date: new Date('2023-10-14T10:00:00.000+02:00'),
-      teamA: 'Nymburk',
-      teamB: 'Benešov',
-      outEventTeam: 'Nymburk',
+      date: new Date('2024-10-12T11:00:00.000+02:00'),
+      teamA: 'Benešov',
+      teamB: 'Nymburk',
+      outEventTeam: '',
       eventUrl: ''
     },
     {
-      date: new Date('2023-10-22T11:00:00.000+02:00'),
+      date: new Date('2024-10-19T10:00:00.000+02:00'),
+      teamA: 'Vlašim',
+      teamB: 'Benešov',
+      outEventTeam: 'Vlašim',
+      eventUrl: null
+    },
+    {
+      date: new Date('2024-11-02T11:00:00.000+01:00'),
       teamA: 'Benešov',
       teamB: 'Mělník',
-      outEventTeam: null,
-      eventUrl: null
+      outEventTeam: '',
+      eventUrl: ''
     },
     {
-      date: new Date('2023-11-04T09:00:00.000+01:00'),
-      teamA: 'Dobřichovice B',
+      date: new Date('2024-11-09T10:00:00.000+01:00'),
+      teamA: 'Kralupy',
       teamB: 'Benešov',
-      outEventTeam: 'Dobřichovice B',
-      eventUrl: ''
-    },
-    {
-      date: new Date('2023-11-11T11:00:00.000+01:00'),
-      teamA: 'Benešov',
-      teamB: 'Zruč nad Sázavou',
-      outEventTeam: '',
+      outEventTeam: 'Kralupy',
       eventUrl: null
     },
     {
-      date: new Date('2023-11-23T10:00:00.000+01:00'),
+      date: new Date('2024-11-23T10:00:00.000+01:00'),
       teamA: 'Benešov',
       teamB: 'Zruč nad Sázavou',
       outEventTeam: '',
       eventUrl: ''
     },
     {
-      date: new Date('2023-11-30T10:00:00.000+01:00'),
+      date: new Date('2024-11-30T10:00:00.000+01:00'),
       teamA: 'Tuchlovice A',
       teamB: 'Benešov',
       outEventTeam: 'Tuchlovice A',
       eventUrl: null
     },
     {
-      date: new Date('2024-01-25T10:00:00.000+01:00'),
+      date: new Date('2025-01-25T10:00:00.000+01:00'),
       teamA: 'Roztoky',
       teamB: 'Benešov',
       outEventTeam: 'Roztoky',
       eventUrl: ''
     },
     {
-      date: new Date('2024-02-08T10:00:00.000+01:00'),
+      date: new Date('2025-02-08T10:00:00.000+01:00'),
       teamA: 'Nymburk',
       teamB: 'Benešov',
       outEventTeam: 'Nymburk',
       eventUrl: null
     },
     {
-      date: new Date('2024-02-15T11:00:00.000+01:00'),
+      date: new Date('2025-02-15T11:00:00.000+01:00'),
       teamA: 'Benešov',
       teamB: 'Vlašim',
-      outEventTeam: 'Vlašim',
+      outEventTeam: '',
       eventUrl: null
     },
     {
-      date: new Date('2024-02-22T10:00:00.000+01:00'),
+      date: new Date('2025-02-22T10:00:00.000+01:00'),
       teamA: 'Mělník',
       teamB: 'Benešov',
       outEventTeam: 'Mělník',
       eventUrl: null
     },
     {
-      date: new Date('2024-03-08T11:00:00.000+01:00'),
+      date: new Date('2025-03-08T11:00:00.000+01:00'),
       teamA: 'Benešov',
       teamB: 'Kralupy',
       outEventTeam: '',
       eventUrl: null
     },
     {
-      date: new Date('2024-03-15T10:00:00.000+01:00'),
+      date: new Date('2025-03-15T10:00:00.000+01:00'),
       teamA: 'Zruč nad Sázavou',
       teamB: 'Benešov',
       outEventTeam: 'Zruč nad Sázavou',
       eventUrl: null
     },
     {
-      date: new Date('2024-03-23T11:00:00.000+01:00'),
+      date: new Date('2025-03-22T11:00:00.000+01:00'),
       teamA: 'Benešov',
       teamB: 'Tuchlovice A',
       outEventTeam: '',
@@ -373,7 +373,7 @@ export class AppComponent implements  OnInit {
     {
       fullName: 'Staněk Ondřej',
       year: '1994',
-      roles: 'Blokař',
+      roles: 'Smečař',
       imageUrl: 'assets/img/players/no-person.png',
       social: '',
     },
