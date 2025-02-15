@@ -9,7 +9,7 @@ import { CoreModule } from './modules/core/core.module';
     AppComponent
   ],
   imports: [
-    BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    BrowserModule,
     CoreModule
   ],
   providers: [],

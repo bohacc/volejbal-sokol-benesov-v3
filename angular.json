@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/volejbal-sokol-benesov-v3/browser",
+            "outputPath": "dist/volejbal-sokol-benesov-v3/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -176,7 +176,7 @@
         "deploy": {
           "builder": "@angular/fire:deploy",
           "options": {
-            "ssr": true
+            "ssr": false
           }
         }
       }

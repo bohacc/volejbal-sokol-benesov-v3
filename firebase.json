@@ -17,7 +17,7 @@
     },
     {
       "target": "volejbal-sokol-benesov-v3",
-      "public": "dist\\volejbal-sokol-benesov-v3\\dist\\volejbal-sokol-benesov-v3\\browser",
+      "public": "dist\\volejbal-sokol-benesov-v3",
       "ignore": [
         "**/.*"
       ],
@@ -31,16 +31,7 @@
             }
           ]
         }
-      ],
-      "rewrites": [
-        {
-          "source": "**",
-          "function": "ssr"
-        }
       ]
     }
-  ],
-  "functions": {
-    "source": "dist/volejbal-sokol-benesov-v3"
-  }
+  ]
 }
